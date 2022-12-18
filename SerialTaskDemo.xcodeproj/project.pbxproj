@@ -11,6 +11,10 @@
 		C44C518E294FC0CD003591A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C518D294FC0CD003591A4 /* ContentView.swift */; };
 		C44C5190294FC0CF003591A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44C518F294FC0CF003591A4 /* Assets.xcassets */; };
 		C44C5194294FC0CF003591A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44C5193294FC0CF003591A4 /* Preview Assets.xcassets */; };
+		C44C519B294FC11A003591A4 /* SerialTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C519A294FC11A003591A4 /* SerialTasks.swift */; };
+		C44C519D294FC136003591A4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C519C294FC136003591A4 /* ViewModel.swift */; };
+		C44C519F294FC23B003591A4 /* UUIDResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C519E294FC23B003591A4 /* UUIDResponse.swift */; };
+		C44C51A1294FD920003591A4 /* README.png in Resources */ = {isa = PBXBuildFile; fileRef = C44C51A0294FD920003591A4 /* README.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,12 @@
 		C44C518F294FC0CF003591A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C44C5191294FC0CF003591A4 /* SerialTaskDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SerialTaskDemo.entitlements; sourceTree = "<group>"; };
 		C44C5193294FC0CF003591A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C44C519A294FC11A003591A4 /* SerialTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialTasks.swift; sourceTree = "<group>"; };
+		C44C519C294FC136003591A4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C44C519E294FC23B003591A4 /* UUIDResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDResponse.swift; sourceTree = "<group>"; };
+		C44C51A0294FD920003591A4 /* README.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = README.png; sourceTree = "<group>"; };
+		C44C51A2294FD937003591A4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C44C51A3294FDD13003591A4 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,9 @@
 		C44C517F294FC0CD003591A4 = {
 			isa = PBXGroup;
 			children = (
+				C44C51A2294FD937003591A4 /* README.md */,
+				C44C51A3294FDD13003591A4 /* LICENSE.md */,
+				C44C51A0294FD920003591A4 /* README.png */,
 				C44C518A294FC0CD003591A4 /* SerialTaskDemo */,
 				C44C5189294FC0CD003591A4 /* Products */,
 			);
@@ -54,6 +67,9 @@
 			children = (
 				C44C518B294FC0CD003591A4 /* SerialTaskDemoApp.swift */,
 				C44C518D294FC0CD003591A4 /* ContentView.swift */,
+				C44C519C294FC136003591A4 /* ViewModel.swift */,
+				C44C519A294FC11A003591A4 /* SerialTasks.swift */,
+				C44C519E294FC23B003591A4 /* UUIDResponse.swift */,
 				C44C518F294FC0CF003591A4 /* Assets.xcassets */,
 				C44C5191294FC0CF003591A4 /* SerialTaskDemo.entitlements */,
 				C44C5192294FC0CF003591A4 /* Preview Content */,
@@ -127,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44C51A1294FD920003591A4 /* README.png in Resources */,
 				C44C5194294FC0CF003591A4 /* Preview Assets.xcassets in Resources */,
 				C44C5190294FC0CF003591A4 /* Assets.xcassets in Resources */,
 			);
@@ -141,6 +158,9 @@
 			files = (
 				C44C518E294FC0CD003591A4 /* ContentView.swift in Sources */,
 				C44C518C294FC0CD003591A4 /* SerialTaskDemoApp.swift in Sources */,
+				C44C519F294FC23B003591A4 /* UUIDResponse.swift in Sources */,
+				C44C519D294FC136003591A4 /* ViewModel.swift in Sources */,
+				C44C519B294FC11A003591A4 /* SerialTasks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +282,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SerialTaskDemo/SerialTaskDemo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SerialTaskDemo/Preview Content\"";
@@ -287,7 +308,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.SerialTaskDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SerialTaskDemo/SerialTaskDemo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SerialTaskDemo/Preview Content\"";
@@ -325,7 +349,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.SerialTaskDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
